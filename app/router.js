@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('button');
+  this.route('post');
 });
 
 export default Router;
