@@ -1,11 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-    
-    
+export default Ember.Controller.extend({
     actions: {
         doStuff() {
-            alert('hi');
+            alert('hey');
         }
     }
 });
