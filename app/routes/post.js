@@ -1,5 +1,9 @@
+import Ember from 'ember';
+import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
+
+
 // app/routes/post.js
-export default Ember.Route.extend({
+export default Ember.Route.extend(AuthenticatedRouteMixin, {
   actions: {
     signInToComment: function(){
       var controller = this.controllerFor('post');
