@@ -15,6 +15,7 @@
 /libpeerconnection.log
 npm-debug.log*
 testem.log
+ermagerd-5f3ce-firebase.json
 
 # ember-try
 .node_modules.ember-try/
