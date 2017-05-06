@@ -1,9 +1,6 @@
 import Ember from 'ember';
 export default Ember.Route.extend({
   beforeModel: function() {
-      if (this.get('session').fetch !== 'undefined') {
-         alert(this.get('session'));
-      }
         return this.get('session').fetch().catch(function() {});
   },
   actions: {
