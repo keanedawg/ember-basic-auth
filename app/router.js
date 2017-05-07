@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {});
+Router.map(function() {
+  this.route('login');
+  this.route('secret-page');
+});
 
 export default Router;
