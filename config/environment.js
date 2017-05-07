@@ -8,7 +8,7 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     torii: {
-    sessionServiceName: 'session'
+      sessionServiceName: 'session'
     },
     EmberENV: {
       FEATURES: {
