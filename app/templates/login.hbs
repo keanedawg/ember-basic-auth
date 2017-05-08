@@ -9,10 +9,10 @@
 {{else}}
   <button {{action "signIn" "twitter"}}>Sign in with Twitter</button>
   <br><br>
-  Username: <input type="text"> <br>
-  Password: <input type="text">
+  Username: {{input type="text" value=username}}<br>
+  Password: {{input type="text" value=password}}       
   <br>
-  <button {{action "signInPW" "password" "fake@google.com" "123456"}}>Login with username</button>
+  <button {{action "signInPW" "password" username password}}>Login with username</button>
 {{/if}}
 
 {{outlet}}
