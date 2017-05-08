@@ -17,7 +17,9 @@ export default Ember.Route.extend({
         provider: provider,
         email: username,
         password: password
-       });
+       }).then(function(data) {
+        console.log(data.currentUser);
+      });
     }
   }
 });
