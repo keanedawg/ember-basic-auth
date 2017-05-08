@@ -10,6 +10,7 @@ Router.map(function() {
   this.authenticatedRoute('secret-page');
   this.route('login');
   this.route('secret-page');
+  this.route('secret-page2');
 });
 
 export default Router;
