@@ -12,10 +12,12 @@ export default Ember.Route.extend({
     signOut: function() {
       this.get('session').close();
     },
-    signInPW: function(provider) {
-        this.get('session').open('firebase', { provider: provider}).then(function(data) {
-        console.log(data.currentUser);
-      });
+    signInPW: function(provider, username, password) {
+       this.get('session').open('firebase', {
+        provider: provider,
+        email: username,
+        password: password
+       });
     }
   }
 });
